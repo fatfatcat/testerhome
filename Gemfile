@@ -79,9 +79,6 @@ gem 'sinatra', '>= 1.3.0', :require => nil
 
 gem 'faye-rails','1.0.0'
 
-# 分享功能
-gem "social-share-button", '0.1.5'
-
 # 表单
 gem 'simple_form', "3.0.2"
 

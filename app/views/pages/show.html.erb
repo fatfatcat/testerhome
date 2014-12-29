@@ -9,7 +9,7 @@
     </div>
   <% end %>
   <div style="text-align:right;">
-    <%= social_share_button_tag h("#{@page.title} via: @#{Setting.twitter_id} ") %>
+      <%=bdshare_tag(@topic.title + "via: @" + Setting.twitter_id)%>
   </div>
 
   <div class="wikistyle">
@@ -27,4 +27,3 @@
     </div>
   </div>
 </div>
-

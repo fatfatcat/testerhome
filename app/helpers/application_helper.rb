@@ -135,4 +135,22 @@ module ApplicationHelper
       raw html.join(" ")
     end
   end
+
+  def bdshare_tag(text)
+    html = []
+    html << %W(
+    <div class="bdsharebuttonbox">
+      <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+      <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+      <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+      <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+      <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+    </div>
+    <script>
+      window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"#{text}","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};
+      with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+    )
+    raw html.join(" ")
+  end
 end

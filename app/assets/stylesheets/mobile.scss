@@ -21,7 +21,7 @@ body {
   }
 }
 .navbar-fixed-top {
-    h3 { 
+    h3 {
       display:block; float:none; clear:both; text-align:center;
       margin:0px;
       width:auto;
@@ -168,7 +168,7 @@ form {
       .node { padding:0;}
       em { display:none; }
     }
-    .social-share-button { display:none; }
+    .bdsharebuttonbox { display:none; }
     .tools { float: none; }
   }
 }
@@ -231,7 +231,7 @@ form {
 .home_suggest_topics {
   .box { width:auto; position: static;}
   .topics {
-    .topic { 
+    .topic {
       height:auto;
       .title {
         white-space:break-all;
